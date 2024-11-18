@@ -93,14 +93,12 @@
 	    
 	    
 </a-scene>
-<script type="text/javascript">
-     document.querySelector("#Back").addEventListener("click", function() {
-       window.history.back();
-      });
-	
-	
-      
-    </script>
+	<script>
+    document.querySelector('[gps-camera]').setAttribute('gps-camera', {
+        simulateLatitude: -33.91247461092813,
+        simulateLongitude: 151.10024188278211
+    });
+</script>
   </body>
 	
 </body>
