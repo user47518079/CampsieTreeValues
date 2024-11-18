@@ -83,9 +83,14 @@
 		    <a-text id="treetext4" value="0m Wide" align="center" color="yellow" visible="true" scale="2 2 2" position="0 4.8 3.5" billboard></a-text>
        </a-gltf-model>
 
-        <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera="simulateLatitude: -33.91247461092813; simulateLongitude: 151.10024188278211;" rotation-reader>
-		
-	</a-camera>
+        <a-camera 
+    look-controls-enabled='false' 
+    arjs-look-controls='smoothingFactor: 0.1' 
+    gps-camera="simulateLatitude: -33.91247461092813; simulateLongitude: 151.10024188278211; minDistance: 0;" 
+    far="10000" 
+    rotation-reader>
+</a-camera>
+	    
 </a-scene>
 <script type="text/javascript">
      document.querySelector("#Back").addEventListener("click", function() {
